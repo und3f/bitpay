@@ -96,7 +96,7 @@ Business::Bitpay - Bitpay API
     $invoice = $bitpay->create_invoice(price => 10, currency => 'USD');
 
     # get invoice data
-    $invoice = $bitpay->get_invoice($invoice_id);
+    $invoice = $bitpay->get_invoice($invoice->{id});
 
 =head1 DESCRIPTION
     
