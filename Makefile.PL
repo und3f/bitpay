@@ -4,7 +4,7 @@ all_from 'lib/Business/Bitpay.pm';
 
 requires 'Carp';
 requires 'HTTP::Request';
-requires 'List::Util';
+requires 'JSON';
 requires 'LWP::UserAgent';
 requires 'URI';
 test_requires 'Test::More' => '0.88';

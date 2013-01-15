@@ -1,5 +1,9 @@
 Revision history for perl module Business::Bitpay
 
+0.02 2013-01-15
+    
+    - Fixed dependencies
+
 0.01 2013-01-15
 
     - Initial release
