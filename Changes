@@ -1,5 +1,9 @@
 Revision history for perl module Business::Bitpay
 
+0.03 2013-08-18
+    
+    - Don't add ContentType field on GET queries
+
 0.02 2013-01-15
     
     - Fixed dependencies

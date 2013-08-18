@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 use 5.008_001;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 eval $VERSION;
 
 use HTTP::Request;
@@ -32,18 +32,21 @@ sub prepare_request {
     $uri->path($uri->path . $api);
 
     my $method = 'GET';
+    my @fields;
     if ($data) {
         $method = 'POST';
         $data   = encode_json $data;
+        push @fields, 'Content-Type' => 'application/json';
     }
 
     my $request = HTTP::Request->new(
         $method => $uri, [
-            'Content-Type' => 'application/json',
-            'User-Agent'   => 'bitpay api'
+            'User-Agent'   => 'bitpay api',
+            @fields,
         ],
         $data
     );
+    $request;
 }
 
 sub request {
