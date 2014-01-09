@@ -1,5 +1,9 @@
 Revision history for perl module Business::Bitpay
 
+0.04 2014-01-09
+    
+    - LWP::Protocol::https added to dependencies
+
 0.03 2013-08-18
     
     - Don't add ContentType field on GET queries

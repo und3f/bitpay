@@ -6,6 +6,7 @@ requires 'Carp';
 requires 'HTTP::Request';
 requires 'JSON';
 requires 'LWP::UserAgent';
+requires 'LWP::Protocol::https';
 requires 'URI';
 test_requires 'Test::More' => '0.88';
 
