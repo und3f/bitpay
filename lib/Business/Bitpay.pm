@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 use 5.008_001;
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 eval $VERSION;
 
 use HTTP::Request;
@@ -42,6 +42,7 @@ sub prepare_request {
     my $request = HTTP::Request->new(
         $method => $uri, [
             'User-Agent'   => 'bitpay api',
+            'X-BitPay-Plugin-Info' => 'perl0.05',
             @fields,
         ],
         $data
@@ -104,7 +105,7 @@ Business::Bitpay - Bitpay API
 =head1 DESCRIPTION
     
 Bitpay API documentation contents full description of API methods
-L<https://bitpay.com/help-api>.
+L<https://bitpay.com/downloads/bitpayApi.pdf>.
 
 =head2 C<new>
 
