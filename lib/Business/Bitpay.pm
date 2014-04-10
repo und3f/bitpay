@@ -42,7 +42,7 @@ sub prepare_request {
     my $request = HTTP::Request->new(
         $method => $uri, [
             'User-Agent'   => 'bitpay api',
-            'X-BitPay-Plugin-Info' => 'perl0.05',
+            'X-BitPay-Plugin-Info' => 'perl' . $VERSION,
             @fields,
         ],
         $data
