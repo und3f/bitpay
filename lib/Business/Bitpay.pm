@@ -139,6 +139,10 @@ L<https://bitpay.com/downloads/bitpayApi.pdf>
 
 Sergey Zasenko, C<undef@cpan.org>.
 
+=head1 CREDITS
+
+Rich Morgan (ionux)
+
 =head1 COPYRIGHT AND LICENSE
 
 Copyright (C) 2013, Sergey Zasenko.
